@@ -45,7 +45,7 @@ if submit_button and message:
         for msg in messages:
             file.write(f"{msg['time']}|{msg['user']}|{msg['content']}\n")
     # 重新渲染页面以显示新的消息
-    st.experimental_rerun()
+    st.rerun()
 
 # 自动刷新容器
 auto_refresh_container = st.empty()
